@@ -1,4 +1,4 @@
-import { generateId } from "../Utils/GenerateId.js"
+
 
 export default class Car {
   constructor({ make, model, year, price, description, imgUrl, id }) {
