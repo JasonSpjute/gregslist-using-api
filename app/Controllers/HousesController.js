@@ -16,6 +16,7 @@ export default class HousesController{
         this.getHouses()
     }
 
+    
     getHouses(){
         try{
             housesService.getHouses()

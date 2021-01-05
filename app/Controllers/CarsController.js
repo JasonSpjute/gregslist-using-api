@@ -54,6 +54,7 @@ export default class CarsController {
     $("#new-car-modal").modal('hide');
   }
 
+  
 
   deleteCar(id) {
     console.log(id);

@@ -34,13 +34,13 @@ class CarsService {
     let carData = { price : newPrice }
     let res = await api.put("cars/"+id, carData)
     console.log(res);
-    let oldCarIndex = ProxyState.cars.findIndex(c=> c.id ==id)
+    // let oldCarIndex = ProxyState.cars.findIndex(c=> c.id ==id)
   
-    let temp = ProxyState.cars
-    temp.splice(oldCarIndex,1,new Car(res.data))
-    ProxyState.cars = temp
+    // let temp = ProxyState.cars
+    // temp.splice(oldCarIndex,1,new Car(res.data))
+    // ProxyState.cars = temp
     
-    // this.getCars()
+    this.getCars()
 
   }
 

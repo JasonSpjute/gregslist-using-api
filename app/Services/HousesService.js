@@ -15,7 +15,7 @@ class HousesService{
         ProxyState.houses = res.data.map(s=> new House(s))
     }
     async deleteHouse(id) {
-        await api.delete("houses", id)
+        await api.delete("houses/"+id)
         ProxyState.houses = ProxyState.houses.filter(house=> house.id != id)
     }
 
