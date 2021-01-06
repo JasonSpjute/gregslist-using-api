@@ -1,5 +1,6 @@
 export default class Job{
-    constructor(company, jobTitle, hours, rate, description, id){
+    constructor({company, jobTitle, hours, rate, description, id}){
+        debugger
         this.company = company
         this.jobTitle = jobTitle
         this.hours = hours
@@ -17,9 +18,9 @@ export default class Job{
                 <h6 class="card-subtitle">${this.company}</h6>
                 <p class="card-text">Rate = ${this.rate}</p>
                 <p class="card-text">Hours: ${this.hours}</p>
-                <p class="card-text">Bathrooms: ${this.description}</p>
+                <p class="card-text">${this.description}</p>
                 <div class="text-right">
-                    <button type="button" class="btn btn-success" onclick="app.housesController.bid('${this.id}', '${this.price += 500}')">Bid</button>
+                    <button type="button" class="btn btn-success" >Apply</button>
                     <button type="button" class="btn btn-danger" onclick="app.housesController.deleteHouse('${this.id}')">Delete</button>
                 </div>
             </div>
@@ -28,5 +29,5 @@ export default class Job{
             `
     
     }
-    }
+    
 }
